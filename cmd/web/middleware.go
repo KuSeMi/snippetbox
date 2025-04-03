@@ -3,8 +3,9 @@ package main
 import (
 	"net/http"
 
+	"context"
+
 	"github.com/justinas/nosurf"
-	"golang.org/x/net/context"
 )
 
 func commonHeaders(next http.Handler) http.Handler {
